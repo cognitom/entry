@@ -1,0 +1,16 @@
+{
+  "name": "entry",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Tsutomu Kawamura <kawamura@cognitom.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^1.9.0",
+    "riot": "2.0.10"
+  },
+  "scripts": {
+    "build": "riot ./components components.js",
+    "start": "riot -w ./components components.js & browser-sync start --server --files '*.*'"
+  }
+}

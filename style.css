@@ -1,0 +1,35 @@
+body {
+  color: #333;
+}
+
+label {
+  width: 5em;
+  display: inline-block;
+  color: #999;
+  font-weight: bold;
+}
+input {
+  line-height: 1.5em;
+  display: inline-block;
+  padding: .1em .3em;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 3px;
+}
+input.invalid {
+  background: #fff7f7;
+}
+select {
+  height: 2em;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 3px;
+}
+button {
+  line-height: 2em;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 5px;
+  padding: 0 2em;
+  font-size: 120%;
+  cursor: pointer;
+}
