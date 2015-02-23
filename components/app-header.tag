@@ -1,12 +1,12 @@
 <app-header>
 
-  <style>
-    app-header {
+  <style scoped>
+    :scope {
       display: block;
       text-align: center;
       padding: 2em;
     }
-    app-header h1 {
+    h1 {
       color: #666;
       margin: 0;
     }

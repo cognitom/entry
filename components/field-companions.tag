@@ -1,32 +1,32 @@
 <field-companions>
 
-  <style>
-    field-companions {
+  <style scoped>
+    :scope {
       display: block;
       padding: .2em 1em;
     }
-    field-companions > div {
+    :scope > div {
       display: inline-block;
       vertical-align: middle;
     }
-    field-companions > div > * {
+    :scope > div > * {
       line-height: 3em;
       border-bottom: 1px dashed #ccc;
     }
-    field-companions > div > *:last-child { border: none; }
-    field-companions > div > span { display: block; }
-    field-companions fa[icon="plus-circle"] {
+    :scope > div > *:last-child { border: none; }
+    :scope > div > span { display: block; }
+    fa[icon="plus-circle"] {
       cursor: pointer;
       color: #999;
       font-size: 120%;
     }
-    field-companions fa[icon="check-circle"] {
+    fa[icon="check-circle"] {
       color: #2FC46D;
       vertical-align: middle;
       font-size: 150%;
       margin-right: .2em;
     }
-    field-companions fa.invalid { color: rgba(0,0,0,.15) }
+    fa.invalid { color: rgba(0,0,0,.15) }
   </style>
 
   <fa icon="check-circle" class={ invalid: !ok } />

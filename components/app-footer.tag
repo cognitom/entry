@@ -1,7 +1,7 @@
 <app-footer>
 
-  <style>
-    app-footer {
+  <style scoped>
+    :scope {
       display: block;
       text-align: center;
       color: #999;

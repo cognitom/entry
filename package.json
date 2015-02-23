@@ -7,7 +7,7 @@
   "private": true,
   "devDependencies": {
     "browser-sync": "^1.9.0",
-    "riot": "2.0.10"
+    "riot": "cognitom/riotjs#scoped-css"
   },
   "scripts": {
     "build": "riot ./components components.js",

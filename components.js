@@ -638,7 +638,7 @@ riot.tag('fa', '', '@font-face { font-family: \'FontAwesome\'; src: url(\'http:/
   
 });
 
-riot.tag('field-companions-item', '<fa icon="male"></fa> <select name="grade" value="{ value.grade }" onchange="{ send }"> <option value="" disabled="disabled">School Grade</option> <option each="{ name, i in grades }" >{ name }</option> </select> <select name="lang" value="{ value.lang }" onchange="{ send }"> <option value="" disabled="disabled">Prog Language</option> <option each="{ name, i in langs }" >{ name }</option> </select> <fa icon="minus-circle" onclick="{ removeMe }"></fa>', 'field-companions-item { display: block } field-companions-item > * { vertical-align: middle } field-companions-item fa[icon="male"] { font-size: 150%; margin-right: .2em; } field-companions fa[icon="minus-circle"] { cursor: pointer; color: #999; font-size: 120%; }', function(opts) {
+riot.tag('field-companions-item', '<fa icon="male"></fa> <select name="grade" value="{ value.grade }" onchange="{ send }"> <option value="" disabled="disabled">School Grade</option> <option each="{ name, i in grades }" >{ name }</option> </select> <select name="lang" value="{ value.lang }" onchange="{ send }"> <option value="" disabled="disabled">Prog Language</option> <option each="{ name, i in langs }" >{ name }</option> </select> <fa icon="minus-circle" onclick="{ removeMe }"></fa>', 'field-companions-item { display: block } field-companions-item > * { vertical-align: middle } field-companions-item fa[icon="male"] { font-size: 150%; margin-right: .2em; } field-companions-item fa[icon="minus-circle"] { cursor: pointer; color: #999; font-size: 120%; }', function(opts) {
     var VALIDATION = function (v) { return !!v.grade && !!v.lang }
 
     this.key   = opts.key
@@ -749,7 +749,7 @@ riot.tag('field-name', '<fa icon="check-circle" class="{ invalid: !ok }"></fa> <
   
 });
 
-riot.tag('field-phone', '<fa icon="check-circle" class="{ invalid: !ok }"></fa> <label>{ label }</label> <input name="first" placeholder="090" class="{ invalid: !ok }" value="{ value.split(\'-\')[0] }" onkeyup="{ sync }" onchange="{ send }"> - <input name="second" placeholder="1234" class="{ invalid: !ok }" value="{ value.split(\'-\')[1] }" onkeyup="{ sync }" onchange="{ send }"> - <input name="third" placeholder="5678" class="{ invalid: !ok }" value="{ value.split(\'-\')[2] }" onkeyup="{ sync }" onchange="{ send }">', 'field-phone { display: block; padding: .6em 1em; } field-phone input { width: 3em; font-size: 120%; } field-phone fa { color: #2FC46D; vertical-align: middle; font-size: 150%; margin-right: .2em; } field-phone fa.invalid { color: rgba(0,0,0,.15) }', function(opts) {
+riot.tag('field-phone', '<fa icon="check-circle" class="{ invalid: !ok }"></fa> <label>{ label }</label> <input name="first" placeholder="090" class="{ invalid: !ok }" value="{ value.split("-\')[0] }" onkeyup="{ sync }" onchange="{ send }"> - <input name="second" placeholder="1234" class="{ invalid: !ok }" value="{ value.split("-\')[1] }" onkeyup="{ sync }" onchange="{ send }"> - <input name="third" placeholder="5678" class="{ invalid: !ok }" value="{ value.split("-\')[2] }" onkeyup="{ sync }" onchange="{ send }">', 'field-phone { display: block; padding: .6em 1em; } field-phone input { width: 3em; font-size: 120%; } field-phone fa { color: #2FC46D; vertical-align: middle; font-size: 150%; margin-right: .2em; } field-phone fa.invalid { color: rgba(0,0,0,.15) }', function(opts) {
     var PHONE      = /^[0-9]{2,4}-[0-9]{2,4}-[0-9]{4}$/
     var VALIDATION = function (v) { return PHONE.test(v) }
 

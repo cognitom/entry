@@ -1,21 +1,21 @@
 <field-phone>
 
-  <style>
-    field-phone {
+  <style scoped>
+    :scope {
       display: block;
       padding: .6em 1em;
     }
-    field-phone input {
+    input {
       width: 3em;
       font-size: 120%;
     }
-    field-phone fa {
+    fa {
       color: #2FC46D;
       vertical-align: middle;
       font-size: 150%;
       margin-right: .2em;
     }
-    field-phone fa.invalid { color: rgba(0,0,0,.15) }
+    fa.invalid { color: rgba(0,0,0,.15) }
   </style>
 
   <fa icon="check-circle" class={ invalid: !ok } />

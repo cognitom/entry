@@ -1,20 +1,20 @@
 <field-name>
 
-  <style>
-    field-name {
+  <style scoped>
+    :scope {
       display: block;
       padding: .6em 1em;
     }
-    field-name input {
+    input {
       width: 8em;
     }
-    field-name fa {
+    fa {
       color: #2FC46D;
       vertical-align: middle;
       font-size: 150%;
       margin-right: .2em;
     }
-    field-name fa.invalid { color: rgba(0,0,0,.15) }
+    fa.invalid { color: rgba(0,0,0,.15) }
   </style>
 
   <fa icon="check-circle" class={ invalid: !ok } />

@@ -1,20 +1,20 @@
 <field-mail>
 
-  <style>
-    field-mail {
+  <style scoped>
+    :scope {
       display: block;
       padding: .6em 1em;
     }
-    field-mail input {
+    input {
       width: 20em;
     }
-    field-mail fa {
+    fa {
       color: #2FC46D;
       vertical-align: middle;
       font-size: 150%;
       margin-right: .2em;
     }
-    field-mail fa.invalid { color: rgba(0,0,0,.15) }
+    fa.invalid { color: rgba(0,0,0,.15) }
   </style>
 
   <fa icon="check-circle" class={ invalid: !ok } />

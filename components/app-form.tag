@@ -1,11 +1,11 @@
 <app-form>
 
-  <style>
-    app-form {
+  <style scoped>
+    :scope {
       display: block;
       text-align: center;
     }
-    app-form form {
+    form {
       width: 500px;
       margin-left: auto;
       margin-right: auto;
@@ -13,22 +13,22 @@
       border: 2px solid rgba(0,0,0,.1);
       border-radius: 4px;
     }
-    app-form form > *:nth-child(odd) {
+    form > *:nth-child(odd) {
       background: rgba(0,0,0,.05);
     }
-    app-form form > footer:last-child {
+    form > footer:last-child {
       padding: 1em;
       text-align: center;
       background: #1B9CB7;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
     }
-    app-form button {
+    button {
       background: none;
       color: white;
       border-color: white;
     }
-    app-form button:hover {
+    button:hover {
       background: rgba(255,255,255,.2);
     }
   </style>
@@ -49,7 +49,7 @@
     this.ok    = false
 
     submit (e) {
-      //TODO: 
+      //TODO:
     }
 
     sync () {

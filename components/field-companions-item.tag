@@ -1,13 +1,13 @@
 <field-companions-item>
 
-  <style>
-    field-companions-item { display: block }
-    field-companions-item > * { vertical-align: middle }
-    field-companions-item fa[icon="male"] {
+  <style scoped>
+    :scope { display: block }
+    :scope > * { vertical-align: middle }
+    fa[icon="male"] {
       font-size: 150%;
       margin-right: .2em;
     }
-    field-companions fa[icon="minus-circle"] {
+    fa[icon="minus-circle"] {
       cursor: pointer;
       color: #999;
       font-size: 120%;
